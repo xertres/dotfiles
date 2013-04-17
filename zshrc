@@ -27,3 +27,4 @@ alias "dir"="ls -al"
 
 #Disable zsh autocorrection
 unsetopt correct_all
+unsetopt correct
