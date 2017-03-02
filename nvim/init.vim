@@ -7,11 +7,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
+Plug 'sheerun/vim-polyglot'     " Autoload language support 
 
-Plug 'tpope/vim-markdown'
-Plug 'elixir-lang/vim-elixir'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+"Plug 'c-brenn/phoenix.vim'
+Plug 'tpope/vim-projectionist'
+
+Plug 'slashmili/alchemist.vim'  " Elixir lookups
+
 Plug 'thinca/vim-ref'
-Plug 'scrooloose/syntastic'
+Plug 'neomake/neomake'
 
 Plug 'tpope/vim-vividchalk'
 Plug 'tomasr/molokai'

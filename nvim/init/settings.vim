@@ -18,9 +18,10 @@ set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
 set expandtab                         " Use soft tabs
 set tabstop=2                         " How manu columns wide is a TAB?
+set shiftwidth=2                      " Width of autoindent
+set softtabstop=2
 set autoindent
 set smarttab                          " Use shiftwidth to tab at line beginning
-set shiftwidth=2                      " Width of autoindent
 "set softtabstop=2                    " Spaces used instead of TAB in insert mode.
 "set expandtab                        " Exapnd tab to spaces
 
@@ -52,7 +53,7 @@ set wildignore+=public/uploads/**     " ...Also uploads.
 set wildignore+=public/images/**      " ...Also images.
 set wildignore+=vendor/**             " ...Also vendor.
 
-set hls                               " search with highlights by default
+set hlsearch                               " search with highlights by default
 set incsearch                         " Highlight as you search.
 set history=1024                      " History size
 set ignorecase                        " Case-insensitive searching
@@ -64,8 +65,11 @@ set backspace=indent,eol,start        " Let backspace work over anything.
 
 let g:netrw_dirhistmax=0              " Disable history file.
 
+set encoding=utf-8                    " Default encoding type
+
 " Press Space to turn off highlighting and clear any message already  displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
+noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
+noremap <silent> <CR> :nohlsearch<Bar>:echo<CR>""
 
 " Write all writeable buffers when changing buffers or losing focus.
 set autowriteall                              " Save when doing various buffer-switching things.
